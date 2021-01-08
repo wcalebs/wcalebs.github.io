@@ -38,9 +38,10 @@ header, footer {
 }
 img {
     float: right;
-    margin-top: -50px;
+    margin-top: -75px;
     margin-right: 30px;
     border: 1px solid white;
+    max-width: 100%;
 }
 
 li {
@@ -66,3 +67,16 @@ a:hover {
     color: red;
 }
 
+@media screen and (max-width: 500px) {
+  
+    img {
+        float: none;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .myName {
+        margin: auto auto;
+    }
+}
