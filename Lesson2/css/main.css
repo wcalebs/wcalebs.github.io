@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color:#ececec;
+    max-width: 900px;
+    margin: 1.25rem auto;
+    font-family: Open Sans;
+}
+
+ main {
+    margin: 1.25rem auto;
+   
+    background-color:#ececec;
+    
+}
+
+.headName {
+    margin: 10px;
+    background-color: #1B2432;
+    border-radius: 60px;
+    text-align: center;
+    color: white;
+}
+
+.content a {
+    color:black;
+}
+
+.content a:hover {
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.firstColumn{
+    grid-column: 1/2;
+}
+
+.secondColumn {
+    grid-column: 2/3;
+}
+
+.thirdColumn {
+    grid-column: 3/4;
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+.content div {
+    border-radius: 10px;
+    background-color:#A0A1A7;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 50px auto 1fr;
+    justify-items: center;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.cardHead {
+    grid-row: 1/2;
+    background-color: #1B2432;
+    width: 100%;
+    color: white;
+    height: 100%;
+    
+}
+
+.columnHead {
+    /*grid-row: 1/2;*/
+    text-align: center;
+    align-self: center;
+    margin: auto;
+}
+
+.company {
+    grid-row: 2/3;
+}
+
+.content a {
+    grid-row: 3/4;
+}
+
+.content img {
+    grid-row: 4/5;
+}
+
+.description {
+    grid-row: 5/6;
+    padding: 10px;
+}
+
+footer {
+    background-color: #1B2432;
+    text-align: center;
+    margin: 10px;
+    border-radius: 60px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .firstColumn {
+        grid-column: 1/2;
+    }
+    .secondColumn {
+        grid-column: 2/3;
+    }
+    .thirdColumn {
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        display: block;
+    }
+}
