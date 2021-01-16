@@ -62,7 +62,7 @@ img {
     border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 50px auto 1fr;
+    grid-template-rows: 90px 50px 50px auto 1fr;
     justify-items: center;
     margin: 10px;
     overflow: hidden;
@@ -78,9 +78,10 @@ img {
 }
 
 .columnHead {
-    /*grid-row: 1/2;*/
+    
     text-align: center;
     align-self: center;
+    max-height: 100%;
     margin: auto;
 }
 
@@ -140,5 +141,9 @@ footer a:hover {
 @media screen and (max-width: 600px) {
     .content {
         display: block;
+    }
+
+    .columnHead {
+        margin-top: 10px;
     }
 }
