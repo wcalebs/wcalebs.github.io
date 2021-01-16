@@ -74,13 +74,15 @@ img {
     width: 100%;
     color: white;
     height: 100%;
+    display: grid;
+    grid-template: 1fr 1fr;
     
 }
 
 .columnHead {
     
     text-align: center;
-    align-self: center;
+    align-items: center;
     max-height: 100%;
     margin: auto;
 }
@@ -141,9 +143,5 @@ footer a:hover {
 @media screen and (max-width: 600px) {
     .content {
         display: block;
-    }
-
-    .columnHead {
-        margin-top: 10px;
     }
 }
