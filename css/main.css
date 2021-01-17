@@ -67,16 +67,8 @@ a:hover {
     color: red;
 }
 
-@media screen and (max-width: 500px) {
-  
-    img {
-        float: none;
-        max-width: 100%;
+@media screen and (max-width: 600px) {
+    .content {
         display: block;
-        margin: 0 auto;
-    }
-
-    .myName {
-        margin: auto auto;
     }
 }

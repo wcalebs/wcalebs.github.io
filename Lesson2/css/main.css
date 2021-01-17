@@ -123,25 +123,5 @@ footer a:hover {
     color: red;
 }
 
-@media screen and (max-width: 900px) {
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .firstColumn {
-        grid-column: 1/2;
-    }
-    .secondColumn {
-        grid-column: 2/3;
-    }
-    .thirdColumn {
-        grid-column: 1/2;
-    }
-}
 
-@media screen and (max-width: 600px) {
-    .content {
-        display: block;
-    }
-}
